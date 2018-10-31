@@ -1,3 +1,4 @@
+# This Runbook script requires use of Automation Credentials
 # Import required modules
 try {
     Import-Module -Name AzureAD -ErrorAction Stop
@@ -27,7 +28,7 @@ This function is used to get all audit categories from the Graph API REST interf
 .DESCRIPTION
 The function connects to the Graph API Interface and gets all audit categories
 .EXAMPLE
-Get-AuditCategories
+Get-AuditCategories 
 Returns all audit categories configured in Intune
 .NOTES
 NAME: Get-AuditCategories
